@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>iPhone Giveaway</title>
+    <h1 style= "color: darkblue; font-size:300%; font-family: algerian; text-align: right;">iPhone Giveaway</h1>
+    <!-- Replace 'This PC/Desktop/KIM/Pictures.jpg' -->
+    <!-- C:\Users\AYENI OLUWATOBI\OneDrive\Desktop\KIM\SchWork\COSC107 -->
+    
+    <img src="file:///C:/Users/AYENI%20OLUWATOBI/OneDrive/Desktop/KIM/Pictures/images2.jpg" width="800" height="500" alt="iPhone Giveaway"> 
+    <body style="background-color: rgb(100, 142, 163); font-family: Arial; color: darkblue; text-align: center;" >
+    
+
+            <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+
+        #countdown {
+            font-size: 2em;
+            color: black;
+        }
+
+        .segment {
+            display: inline-block;
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            padding: 20px;
+            margin: 5px;
+            border-radius: 5px;
+            font-size: 30px;
+        }
+
+        .button{
+            border: 2px solid black;
+            outline: none;
+            padding: 10px 25px;
+            color: #000;
+        
+        }
+    </style>
+    <script>
+        var countDownDate = new Date().getTime() + 10 * 24 * 60 * 60 * 1000; // 10 days in milliseconds
+
+        // Update the countdown every 1 second
+        var x = setInterval(function() {
+            // Get the current date and time
+            var now = new Date().getTime();
+
+            // Calculate the remaining time
+            var distance = countDownDate - now;
+
+            // Calculate days, hours, minutes, and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the countdown
+            document.getElementById("countdown").innerHTML = 
+                "<div class='segment'>" + days + "<br>DAYS </div>" +
+                "<div class='segment'>" + hours + "<br>HRS </div>" +
+                "<div class='segment'>" + minutes + "<br>MINS </div>" +
+                "<div class='segment'>" + seconds + "<br>SECS </div>";
+
+            // If the countdown is over, display a message
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "<div class='segment'>EXPIRED</div>";
+            }
+        }, 1000);
+    </script>
+</head>
+    
+    <div id="countdown"></div>
+    <body style=" font-family: Arial; color: darkblue; text-align: start; text-align: right;" >
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus eveniet asperiores sunt aut reiciendis? Praesentium animi sequi debitis,
+        tenetur laborum, totam delectus voluptates alias saepe dolorum deleniti dolorem accusantium unde quas! Officiis facere ducimus voluptatem modi hic,
+        mollitia placeat iure itaque vitae, debitis nobis dicta.
+    </body>
+     
+        
+     <h1>Get yours now!</h1>
+        
+     <button style="width:80px; height:25px;"> Claim! </button>
+       
+</head>
+
+</html>
